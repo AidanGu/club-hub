@@ -1,0 +1,78 @@
+{
+  "name": "Club",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Club name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Club description"
+    },
+    "contact_name": {
+      "type": "string",
+      "description": "Point of contact name"
+    },
+    "contact_email": {
+      "type": "string",
+      "description": "Point of contact email"
+    },
+    "calendar_link": {
+      "type": "string",
+      "description": "Calendar link (Google Calendar, etc.)"
+    },
+    "discord_link": {
+      "type": "string",
+      "description": "Discord server invite link"
+    },
+    "website_link": {
+      "type": "string",
+      "description": "Club website URL"
+    },
+    "instagram_link": {
+      "type": "string",
+      "description": "Instagram profile link"
+    },
+    "other_social_links": {
+      "type": "string",
+      "description": "Other social media links"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Academic",
+        "Arts & Culture",
+        "Community Service",
+        "Gaming & Esports",
+        "Health & Wellness",
+        "Political & Advocacy",
+        "Professional",
+        "Recreation & Sports",
+        "Religious & Spiritual",
+        "Social",
+        "Other"
+      ],
+      "description": "Club category"
+    },
+    "logo_url": {
+      "type": "string",
+      "description": "Club logo image URL"
+    },
+    "owner_email": {
+      "type": "string",
+      "description": "Email of the club owner (linked to user)"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the club is active and visible"
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "contact_email",
+    "owner_email"
+  ]
+}
